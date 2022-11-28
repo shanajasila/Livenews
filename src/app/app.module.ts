@@ -6,18 +6,24 @@ import { AppComponent } from './app.component';
 import { AddnewsComponent } from './addnews/addnews.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ViewNewsComponent } from './view-news/view-news.component';
 
 const myRoute:Routes=[
  {
   path:"",
-  component:AddnewsComponent
- }
+  component:AddnewsComponent,
+  },
+  {
+    path:"view",
+    component:ViewNewsComponent
+  }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddnewsComponent
+    AddnewsComponent,
+    ViewNewsComponent
   ],
   imports: [
     BrowserModule,
