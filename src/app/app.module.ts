@@ -7,6 +7,7 @@ import { AddnewsComponent } from './addnews/addnews.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ViewNewsComponent } from './view-news/view-news.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const myRoute:Routes=[
  {
@@ -23,7 +24,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddnewsComponent,
-    ViewNewsComponent
+    ViewNewsComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
